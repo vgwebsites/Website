@@ -1,4 +1,4 @@
-# Veyra Studio
+# VG Websites
 
 A complete, responsive agency website built with React, Vite, TypeScript, Tailwind CSS, Framer Motion, and Lucide React.
 
