@@ -1,7 +1,7 @@
 import { Github, Linkedin } from 'lucide-react'
 import { Container } from '../components/Container'
 import { SectionHeading } from '../components/SectionHeading'
-import { Reveal, Stagger, StaggerItem } from '../animations/Reveal'
+import { Stagger, StaggerItem } from '../animations/Reveal'
 import { founders } from '../data/founders'
 
 export function Founders() {
@@ -53,9 +53,6 @@ export function Founders() {
             </StaggerItem>
           ))}
         </Stagger>
-        <Reveal className="mt-6 text-center">
-           {/* <p className="text-xs text-zinc-600">Sample profiles and stock portraits for layout demonstration. Edit names, bios, photos, and links in <span className="font-mono text-zinc-500">src/data/founders.ts</span>.</p> */}
-        </Reveal>
       </Container>
     </section>
   )

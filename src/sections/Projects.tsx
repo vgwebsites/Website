@@ -8,11 +8,13 @@ import { SectionHeading } from '../components/SectionHeading'
 import { BrowserFrame } from '../components/BrowserFrame'
 import { Reveal } from '../animations/Reveal'
 import { elegantEase } from '../animations/motion'
-import { projectCategories, projects } from '../data/projects'
+import { projectCategories, projects, type ProjectCategory } from '../data/projects'
+
+type ProjectFilter = 'All' | ProjectCategory
+const projectFilters: ProjectFilter[] = ['All', ...projectCategories]
 
 export function Projects() {
-  const [filter, setFilter] =
-    useState<(typeof projectCategories)[number]>('All')
+  const [filter, setFilter] = useState<ProjectFilter>('All')
 
   const reducedMotion = useReducedMotion()
 
@@ -52,7 +54,7 @@ export function Projects() {
 
         {/* Category Filters */}
         <Reveal className="mt-12 flex flex-wrap gap-2" delay={0.08}>
-          {projectCategories.map((category) => (
+          {projectFilters.map((category) => (
             <button
               key={category}
               type="button"

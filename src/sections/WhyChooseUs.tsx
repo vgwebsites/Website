@@ -9,7 +9,7 @@ export function WhyChooseUs() {
       <div className="pointer-events-none absolute right-0 top-0 size-96 rounded-full bg-blue-600/[0.04] blur-[100px]" />
       <Container>
         <SectionHeading
-         
+          eyebrow="Why choose us"
           title={<>Care you can see.<br />Quality you can feel.</>}
           description="Good work is more than a polished homepage. It is the accumulation of hundreds of thoughtful decisions across design, code, and communication."
           align="center"

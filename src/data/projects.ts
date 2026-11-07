@@ -9,7 +9,8 @@ export type Project = {
   description: string
   image: string
   tags: string[]
-  githubUrl: string
+  githubUrl?: string
+  liveUrl?: string
 }
 
 // Sample concept projects only. Replace copy, artwork, and external URLs with real work.
