@@ -126,7 +126,7 @@ export function Contact() {
             </Reveal>
 
             <Reveal delay={0.12} className="mt-10 space-y-3">
-              <a href={siteConfig.emailCompose} target="_blank" rel="noreferrer" className="group flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4 transition-colors hover:border-violet-300/20 hover:bg-white/[0.035]">
+              <a target="_blank" rel="noreferrer" className="group flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-white/[0.02] p-4 transition-colors hover:border-violet-300/20 hover:bg-white/[0.035]">
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-violet-400/10 text-violet-300"><Mail className="size-5" /></span>
                 <span className="min-w-0"><span className="block font-mono text-[9px] uppercase tracking-[0.14em] text-zinc-600">Business email</span><span className="mt-1 block truncate text-sm font-medium text-zinc-200">{siteConfig.email}</span></span>
                 <ArrowUpRight className="ml-auto size-4 shrink-0 text-zinc-600 transition-colors group-hover:text-violet-300" />
